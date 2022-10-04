@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const categories = ['housing', 'groceries', 'gas', 'utilities'];
-const initialState = Object.fromEntries(categories.map(category => [category, []]));
+export const CATEGORIES = ['housing', 'groceries', 'gas', 'utilities'];
+const initialState = Object.fromEntries(CATEGORIES.map(category => [category, []]));
 
 export const selectTransactions = (state) => state.transactions;
 export const selectFlattenedTransactions = (state) => 

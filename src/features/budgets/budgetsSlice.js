@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const categories = ['housing', 'groceries', 'gas', 'utilities'];
-const initialState = categories.map(category => ({ category: category, amount: 0 }));
+export const CATEGORIES = ['housing', 'groceries', 'gas', 'utilities'];
+const initialState = CATEGORIES.map(category => ({ category: category, amount: 0 }));
 export const selectBudgets = (state) => state.budgets;
 
 const budgetsSlice = createSlice({
